@@ -1,84 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
 
-        .register-form{
+      .register-form {
+        width: 35%;
+        margin: auto;
+        padding: 10px;
+        box-shadow: 0px 0px 8px rgb(191, 188, 188);
+        margin-top: 50px;
+        border-radius: 8px;
+        min-width: 400px;
+        max-width: 800px;
+      }
 
-            width: 35%;
-            margin:auto;
-            padding: 10px;
-            box-shadow: 0px 0px 8px rgb(191, 188, 188);
-            margin-top: 50px;
-            border-radius: 8px;
-            min-width: 400px;
-            max-width: 800px;
-        }
+      h1 {
+        text-align: center;
+        border-bottom: 1px solid gray;
+        padding: 10px;
+        color: green;
+      }
 
-        h1{
-            text-align: center;
-            border-bottom: 1px solid gray;
-            padding: 10px;
-            color: green;
-        }
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0px;
+        outline: none;
+      }
 
-        input{
+      #btn {
+        background-color: green;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
 
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0px;
-        }
+      form {
+        margin: 10px 0px;
+      }
 
-        #btn{
+      .username,
+      .email,.mobile,.password {
+        display: flex;
+        align-items: center;
+      }
 
-            background-color: green;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-weight: bold;
-        }
+      .icon {
+        width: 10%;
+        height: 6.2vh;
+        border: 1px solid black;
+        border-radius: 8px 0px 0px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-right: none;
+      }
 
-        form{
-
-            margin: 10px 0px;
-        }
+      .detail {
+        width: 90%;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="register-form">
-        <h1>Signup</h1>
-        <form action="">
-            <div class="username">
-                <label for="">Username:</label>
-                <input type="text" placeholder="Enter your username">
-            </div>
-            <div class="email">
-                <label for="">Email:</label>
-                <input type="email" placeholder="Enter your email">
-            </div>
-            <div class="mobile">
-                <label for="">Moblie:</label>
-                <input type="number" placeholder="Enter your mobile no">
-            </div>
-            <div class="password">
-                <label for="">Password:</label>
-                <input type="password"  placeholder="Enter your password">
-            </div>
-            <div class="button">
-                <input type="submit" id="btn">
-            </div>
-        </form>
+      <h1>Signup <i class="fa-solid fa-magnifying-glass"></i> </h1>
+      <form action="">
+          <label for="">Username:</label>
+        <div class="username">
+          <div class="icon">
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="detail">
+            <input type="text" placeholder="Enter your username" />
+          </div>
+        </div>
+        <label for="">Email:</label>
+        <div class="email">
+          <div class="icon">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="detail">
+            <input type="email" placeholder="Enter your email" />
+          </div>
+        </div>
+        <label for="">Moblie:</label>
+        <div class="mobile">
+          <div class="icon">
+            <i class="fa-solid fa-mobile"></i>
+          </div>
+          <div class="detail">
+            <input type="number" placeholder="Enter your mobile no" />
+          </div>
+        </div>
+        <label for="">Password:</label>
+        <div class="password">
+          <div class="icon">
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="detail">
+            <input type="password" placeholder="Enter your password" />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" id="btn" />
+          <!-- <i class="fa-solid fa-right-to-bracket"></i> -->
+        </div>
+      </form>
     </div>
-    
-</body>
+  </body>
 </html>
