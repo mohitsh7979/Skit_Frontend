@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .box{
+
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 50px;
+            text-align: center;
+        
+        }
+
+        .box:nth-child(2){
+   
+             background-color: yellow;
+             /* position: relative; */
+             position: absolute;
+             right: 0px;
+             bottom: 0px;
+        
+        }
+
+
+        .container{
+
+            height: 70vh;
+            width: 60%;
+            margin: auto;
+            background-color: yellow;
+            position: relative;
+        }
+
+        .box2{
+
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: absolute;
+            left: 0px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+    5 types positions 
+
+    1 static 
+    2 relative 
+    3 absolute 
+    4 fixed 
+    5 stickey 
+    -->
+
+<!-- 
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div> -->
+
+
+    <div class="container">
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

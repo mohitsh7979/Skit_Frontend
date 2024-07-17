@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+
+    height: 100vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left,.right{
+
+    height: 75%;
+    width:30%;
+    border: 2px solid black;
+}
+
+.upper{
+
+    height: 70%;
+    background-color: yellow;
+}
+
+.mid{
+
+    height: 10%;
+    background-color: black;
+}
+
+.lower{
+
+    height: 20%;
+    background-color: green;
+}
+
+.logo{
+
+    height: 20%;
+    background-color: orange;
+}
+
+.form{
+
+    height: 50%;
+    background-color: blue;
+
+}
+
+
+.links{
+
+    height: 30%;
+    background-color: pink;
+}
+
+@media (max-width:680px){
+
+    .left{
+
+        display: none;
+    }
+
+    .right{
+
+        width: 50%;
+    }
+    
+}
