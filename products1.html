@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box {
+        width: 400px;
+        /* height: 400px; */
+        /* border: 1px solid black; */
+        box-shadow: 0px 0px 10px rgb(180, 179, 179);
+        /* padding: 5px; */
+        overflow: hidden;
+        margin: 5px;
+      }
+
+      img {
+        height: 60%;
+        width: 100%;
+        transition: all 1s;
+      }
+
+      .content {
+        /* border: 2px solid black; */
+        padding: 10px solid black;
+        padding: 10px;
+        font-family: sans-serif;
+        text-align: justify;
+        background-color: white;
+     
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 5px 0px;
+      }
+
+      .box:hover img{
+
+        transform: scale(1.2);
+      }
+
+      .image{
+
+         overflow: hidden;
+      }
+
+   
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="image">
+        <img src="car.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h1>Title - Car</h1>
+        <h2>Price - 500</h2>
+        <p>
+          Description - Lorem ipsum dolor sit amet consectetur, adipisicing
+          elit. Distinctio beatae magnam dolorum id sapiente eius mollitia nihil
+          culpa, non tempore fugit incidunt recusandae minima quibusdam quos rem
+          tenetur quasi autem?
+        </p>
+      </div>
+    </div>
+
+    <div class="box">
+        <div class="image">
+          <img src="car.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Title - Car</h1>
+          <h2>Price - 500</h2>
+          <p>
+            Description - Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Distinctio beatae magnam dolorum id sapiente eius mollitia nihil
+            culpa, non tempore fugit incidunt recusandae minima quibusdam quos rem
+            tenetur quasi autem?
+          </p>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="image">
+          <img src="car.jpg" alt="" />
+        </div>
+        <div class="content">
+          <h1>Title - Car</h1>
+          <h2>Price - 500</h2>
+          <p>
+            Description - Lorem ipsum dolor sit amet consectetur, adipisicing
+            elit. Distinctio beatae magnam dolorum id sapiente eius mollitia nihil
+            culpa, non tempore fugit incidunt recusandae minima quibusdam quos rem
+            tenetur quasi autem?
+          </p>
+        </div>
+      </div>
+  </body>
+</html>
